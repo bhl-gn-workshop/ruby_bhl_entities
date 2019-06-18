@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-require File.dirname(File.dirname(__FILE__)) + '/environment.rb'
+ROOT = File.dirname(File.dirname(__FILE__))
+require ROOT + '/environment.rb'
 
 def main
   logger = Logger.new($stdout)

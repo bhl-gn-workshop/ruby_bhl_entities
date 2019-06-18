@@ -10,4 +10,4 @@
 .sass-cache
 geoparser
 outputs
-config.yaml.sample
+config.yaml

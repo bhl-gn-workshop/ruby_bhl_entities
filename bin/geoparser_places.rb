@@ -11,7 +11,7 @@ def main
   output << ['TitleId', 'PageId', 'Place', 'Latitude', 'Longitude', 'gazref']
 
   stub = Protob::BHLIndex::Stub.new('bhlrpc.globalnames.org:80', :this_channel_is_insecure)
-	opts = Protob::PagesOpt.new(with_text: true, title_ids: TITLE_IDS)  
+	opts = Protob::PagesOpt.new(with_text: true, title_ids: TITLE_IDS)
   
   stub.pages(opts).each_with_index do |p, i|
     stdout, stderr, status = Open3.capture3("./geoparser/scripts/run -t plain -g unlock", stdin_data: p.text)

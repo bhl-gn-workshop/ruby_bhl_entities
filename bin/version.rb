@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-require File.dirname(File.dirname(__FILE__)) + '/environment.rb'
+ROOT = File.dirname(File.dirname(__FILE__))
+require ROOT + '/environment.rb'
 
 def main
   stub = Protob::BHLIndex::Stub.new('bhlrpc.globalnames.org:80', :this_channel_is_insecure)
