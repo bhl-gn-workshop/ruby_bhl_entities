@@ -9,3 +9,5 @@
 .DS_Store
 .sass-cache
 geoparser
+outputs
+config.yaml.sample
