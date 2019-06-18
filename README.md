@@ -12,6 +12,12 @@ Experiments in extracting entities in BHL corpus using GlobalNames gRPC endpoint
 
 This skips the macOS version check. YMMV.
 
+Notes:
+* does not produce character count for position of entity on page as does GN
+* people names is poor
+* TODO: remove scientific names from OCR content before passing to geonames (or other) as these can be people or place names such as Falco
+
 ### Rosette (TBD)
 
 ### IBM Watson (TBD)
+
