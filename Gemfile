@@ -3,6 +3,7 @@ ruby '2.6.3'
 
 gem 'gnfinder'
 gem 'rosette_api'
+gem 'ibm_watson'
 gem 'nokogiri'
 
 group :production do

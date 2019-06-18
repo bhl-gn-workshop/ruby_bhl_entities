@@ -1,2 +1,4 @@
 rosette_key: ""
-watson_key: ""
+watson:
+  apikey: ""
+  url: ""

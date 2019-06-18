@@ -1,5 +1,7 @@
 require 'bundler'
 require 'rosette_api'
+require 'ibm_watson'
+require 'ibm_watson/natural_language_understanding_v1'
 require 'yaml'
 require 'csv'
 require 'logger'

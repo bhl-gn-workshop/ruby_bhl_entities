@@ -1,2 +1,5 @@
-rosette_key: ""
-watson_key: ""
+rosette_key: "a98a6de48fbad58e91fc2a780f00a06c"
+watson:
+  apikey: "Rv48_UMdYpPsOws0qdjOydsQHtYBzQ9ypf3SP5cQRh7Y"
+  url: "https://gateway.watsonplatform.net/natural-language-understanding/api"
+ 

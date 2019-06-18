@@ -10,9 +10,7 @@ def main
   stub = Protob::BHLIndex::Stub.new('bhlrpc.globalnames.org:80', :this_channel_is_insecure)
   stub.titles(Protob::TitlesOpt.new).each_with_index do |t, i|
     output << [t.id]
-    next unless (i % 50_000).zero?
-
-    logger.info("Process #{i} rows")
+    logger.info("Process #{i} titles")
   end
   output.close
 end
