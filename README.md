@@ -51,3 +51,13 @@ Issues and Strengths:
 * language of text is detected prior to entity extraction
 * throughput is approx. 125 pages / minute on a single thread of calls
 
+### LingPipe
+
+[Java-based toolkit](http://alias-i.com/lingpipe/) to process text using computational linguistics. Out-of-the-box, there are a handful of bash scripts to extract entities and other features. However, the entity extractor demo was trained on news articles and is not functional for BHL OCR text.
+
+Issues and Strengths:
+
+* extracts places, people, organizations
+* Java-based, though can be used command-line
+* will require training to work with BHL content
+
