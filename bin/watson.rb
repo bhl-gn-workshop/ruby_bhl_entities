@@ -18,7 +18,7 @@ def main
   output_people << ['TitleId', 'PageId', 'Item', 'Start', 'End']
 
   stub = Protob::BHLIndex::Stub.new('bhlrpc.globalnames.org:80', :this_channel_is_insecure)
-	opts = Protob::PagesOpt.new(with_text: true, title_ids: TITLE_IDS)
+  opts = Protob::PagesOpt.new(with_text: true, title_ids: TITLE_IDS)
 
   natural_language_understanding = IBMWatson::NaturalLanguageUnderstandingV1.new(
     version: "2018-11-16",
