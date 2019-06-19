@@ -27,7 +27,6 @@ def main
   )
 
   stub.pages(opts).each_with_index do |p, i|
-    p.text = "The Falco berigora was confusingly located in Falco."
     content = "#{p.text}".force_encoding("UTF-8")
     if !content.nil? && !content.empty?
       begin
@@ -39,6 +38,12 @@ def main
             }
           }
         ).result
+      rescue
+        response = nil
+        logger.info("Language is not recognized")
+      end
+
+      if !response.nil?
         response["entities"].each do |e|
           if e["type"] == "Location"
             next if e["mentions"].nil? || e["mentions"].size == 0
@@ -51,10 +56,9 @@ def main
               output_people << [p.title_id, p.id, m["text"], m["location"][0], m["location"][1]]
             end
           end
-        rescue
-          logger.info("My dear Watson we had a problem on #{i}.")
         end
       end
+
     end
     logger.info("Process #{i} pages")
   end

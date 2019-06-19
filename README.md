@@ -45,4 +45,5 @@ Issues and Strenthgs
 * extracts places, people with start and end character positions within text
 * does not have URIs, other metadata for places like lats/longs
 * language of text is detected prior to entity extraction
+* throughout is approx. 125 pages / minute
 
